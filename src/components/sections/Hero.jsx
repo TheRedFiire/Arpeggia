@@ -153,7 +153,7 @@ export default function Hero() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div ref={ref} className="relative h-screen pt-16 flex items-center justify-center overflow-hidden">
+    <div ref={ref} className="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden">
       {/* Fond dégradé abstrait amélioré */}
       <div className="absolute inset-0 z-0">
         <div
@@ -258,14 +258,14 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 1, duration: 0.6 }}
-          className="mt-12 inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm border border-gray-200/50 text-gray-600 px-6 py-3 rounded-full text-sm font-medium shadow-lg"
+          className="mt-12 inline-flex items-center space-x-2 bg-white/90 backdrop-blur-md border border-green-200/50 text-green-700 px-6 py-3 rounded-full text-sm font-medium shadow-xl"
         >
           <motion.div
-            className="w-2 h-2 bg-green-400 rounded-full"
+            className="w-2 h-2 bg-green-500 rounded-full"
             animate={{ scale: [1, 1.2, 1], opacity: [1, 0.7, 1] }}
             transition={{ duration: 2, repeat: Infinity }}
           />
-          <span>Ouvert 24h/24 • 7j/7</span>
+          <span>Disponible 24h/24 • 7j/7</span>
         </motion.div>
       </div>
 
