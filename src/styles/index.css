@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles globaux */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #EAE7DC; /* ivoire */
+  color: #1B263B;            /* dark-navy */
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;        /* désactive le scroll horizontal */
+}
+
+/* Lien survol */
+a {
+  @apply hover:underline;
+}
